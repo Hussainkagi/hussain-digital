@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hussain's Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/467a7ac102.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark cross" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Front-end Developer</p>
+          <h1>Hi, My name is <span>Hussain</span> Kagiwala</h1>
+        </div>
+      </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello, I'm Hussain Kagiwala, a passionate front-end developer with
+              a Bachelor's degree in Information Technology. With over a year of
+              hands-on experience.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li>
+                  <span class="skill">UI/UX</span><br />Designing Web/App
+                  interface
+                </li>
+                <li>
+                  <span>Web Development</span><br />Web application development
+                </li>
+                <li>
+                  <span>Programming</span><br />Web app programming in Java
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span class="skill">2022-2023</span><br />Software developer
+                  at Techovarya solutions pvt. ltd
+                </li>
+                <li>
+                  <span>2022-2022</span><br />Unacademy Student Intern(Part
+                  time)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span class="skill">2019-2023</span><br />B.Tech IT (Parul
+                  University , vadodara(gujarat))
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services page -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-regular fa-object-group"></i>
+            <h2>Web Design</h2>
+            <p>
+              Elevate your online presence with professional web design
+              services. I craft stunning, user-friendly websites tailored to
+              your brand's unique identity.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-desktop"></i>
+            <h2>Web App Development</h2>
+            <p>
+              Transforming your ideas into functional, dynamic websites. My
+              experience and skills bring your online vision to life with
+              precision and innovation.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bug"></i>
+            <h2>Web programming</h2>
+            <p>
+              Unlock the power of custom web programming solutions. my skills in
+              coding and development ensures your website functions flawlessly,
+              meeting your unique needs.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- my work(portfolio) -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/agencyeasy (1).jpg" alt="" />
+            <div class="layer">
+              <h3>Agency Easy</h3>
+              <p>
+                Introducing The Ultimate Solution For Busy Digital Marketers:
+                Software That Automates Your Reports
+              </p>
+              <a href="https://app.agencyeasy.com/login" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/cuzin.jpg" alt="" />
+            <div class="layer">
+              <h3>Cuzin</h3>
+              <p>
+                Advertising website for a sock brand that Sells quality socks.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact me -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-regular fa-envelope"></i> hussain.f.kagi@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-mobile-screen-button"></i>+91-7477093941
+            </p>
+            <div class="socials">
+              <a
+                href="https://www.linkedin.com/in/hussain-kagiwala-4641a7229/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/Hussainkagi?tab=overview&from=2023-08-01&to=2023-08-31"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <button class="btn" id="downloadButton">
+              <span class="btn-text-one">Dowload CV</span>
+              <span class="btn-text-two">Hope u like it!</span>
+            </button>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn" id="downloadButton">
+                <span class="btn-text-one">Submit</span>
+                <span class="btn-text-two">Thank You :)</span></button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="copyright">
+      <p>Copyright © Hussain. Mady by hussain Kagiwala</p>
+    </div>
+  </body>
+  <script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-content');
+    const opentab = (tabname) => {
+      for (tablink of tablinks) {
+        tablink.classList.remove('active-links');
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove('active-tab');
+      }
+      event.currentTarget.classList.add('active-links');
+
+      document.getElementById(tabname).classList.add('active-tab');
+    };
+    document
+      .getElementById('downloadButton')
+      .addEventListener('click', function () {
+        var cvFilePath = 'images/resume.pdf';
+        var downloadLink = document.createElement('a');
+        downloadLink.href = cvFilePath;
+        downloadLink.download = "Hussain's resume";
+        downloadLink.style.display = 'none';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      });
+
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById('sidemenu');
+    function openMenu(){
+      sidemenu.style.right = "0";
+    }
+    function closeMenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWtEjCfzfeMVkuHzgHRnigedTuaSmaDLE4MIswsBv-7nqvlSWpW7lfJVaeZy8OyJKpSA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML="Form submitted successfully. We will contact you soon.";
+          msg.style.backgroundColor = "green";
+          setTimeout(function(){
+            msg.innerHTML="";
+            msg.style.backgroundColor = "transparent";
+          },5000)
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
